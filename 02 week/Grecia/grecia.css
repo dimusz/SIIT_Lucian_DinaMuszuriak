@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+   
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    height: 40px;
+  
+}
+
+a{
+    margin-left: 50px;
+}
+
+
+footer {
+    width: 100%;
+    background-color: violet;
+    height: 40px;
+}
+
+.info {
+    margin: 10px;
+}
+
