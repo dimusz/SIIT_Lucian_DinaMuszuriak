@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bmi.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="name">
+        <input id="new-name" type="text" placeholder="Numele tau" required />
+      </div>
+      <div class="gender">
+        <select name="sex" id="sex-select" required>
+          <option value="">SEX</option>
+          <option value="MASCULIN">MASCULIN</option>
+          <option value="FEMININ">FEMININ</option>
+          <option value="BINARY">BINAR</option>
+        </select>
+      </div>
+      <div class="height">
+        <input
+          id="new-height"
+          type="text"
+          placeholder="Inaltimea ta"
+          required
+        />
+      </div>
+      <div class="weight">
+        <input
+          id="new-weight"
+          type="text"
+          placeholder="Greutatea ta"
+          required
+        />
+      </div>
+      <button onclick="calculate()">Calculeaza BMI</button>
+    </div>
+
+    <script src="./bmi.js"></script>
+  </body>
+</html>
