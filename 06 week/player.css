@@ -1,35 +1,65 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html,
-body{
-    width: 100%;
-    height: 100%;
+body {
+  width: 100%;
+  height: 100%;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .play-box {
-    height: 400px;
-    width: 400px;
-    border: solid 1px black;
-    vertical-align: middle;
+  height: 400px;
+  width: 400px;
+  border: solid 5px black;
+  vertical-align: middle;
+  position: relative;
+  background-color:rgba(254, 193, 204, 0.427);
+  
 }
 
-
 .player {
-    height: 30px;
-    width: 30px;
-    background-color: blue;
-    position: relative;
-    top: 30px;
-    left: 30px;
+  height: 40px;
+  width: 40px;
+  background-color: blue;
+  position: absolute;
+  background-image: url('./pinky.png');
+  background-position: center;
+  background-size: contain;
+}
+
+.obstacle {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  background-image: url('./tirac.png');
+  background-position: center;
+  background-size:contain;
+}
+
+.win {
+    height: 40px;
+    width: 40px;
+    background-image: url('./castel.png');
+    background-position: center;
+    background-size:70px;
+    position:relative
+}
+
+.lives {
+    height: 50px;
+    width: 50px;
+    background-image :url('./ice.png');
+    background-position: center;
+    background-size: contain;
+    margin: 10px;
 }
