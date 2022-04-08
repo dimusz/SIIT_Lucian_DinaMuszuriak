@@ -53,3 +53,11 @@ createLives();
 createLives();
 createLives();
 
+let win = document.querySelector('.win')
+
+// function winner(){
+//   if (player.style.left===win.style.left){
+//   alert('you won')
+//   console.log(alert())
+//   }else {alert('you lose')}
+// }winner()
