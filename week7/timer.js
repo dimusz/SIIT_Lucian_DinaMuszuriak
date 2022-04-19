@@ -5,9 +5,9 @@ function addZero(value) {
   return value;
 }
 
-function creatTimerHtml() {
+const creatTimerHtml = () => {
   const timerHtml = document.createElement("div");
-  timerHtml.className='timer'
+  timerHtml.className = 'timer'
   timerHtml.innerHTML = `
         <span id="hour">00</span>  : 
         <span id="minute">00  </span>:
@@ -22,7 +22,7 @@ const hourHtml = timerHtml.querySelector("#hour");
 const minuteHtml = timerHtml.querySelector("#minute");
 const secundeHtml = timerHtml.querySelector("#secunde");
 
-function startTimer() {
+const startTimer = () => {
   let secunde = 0;
   let minute = 0;
   let hour = 0;
@@ -45,11 +45,11 @@ function startTimer() {
   }, 1000);
 }
 
-function stopTimer() {
+const stopTimer = () => {
   clearInterval(timerWeb);
 }
 
-function resetTimer() {
+const resetTimer = () => {
   clearInterval(timerWeb);
   let secunde = 0;
   let minute = 0;
@@ -61,7 +61,7 @@ function resetTimer() {
 
 const saveTime = document.createElement("ul");
 
-function saveTimer() {
+const saveTimer = () => {
   let seconds = secundeHtml.innerHTML;
   let minutes = minuteHtml.innerHTML;
   let ore = hourHtml.innerHTML;
