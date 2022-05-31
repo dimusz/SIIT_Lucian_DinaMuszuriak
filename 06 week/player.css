@@ -33,3 +33,9 @@ body{
     top: 30px;
     left: 30px;
 }
+.obstacol{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    position: relative
+}
