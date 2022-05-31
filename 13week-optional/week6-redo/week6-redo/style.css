@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.play-box {
+  height: 400px;
+  width: 400px;
+  border: solid 1px black;
+  vertical-align: middle;
+}
+
+
+.player {
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+.obstacol{
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  position: relative
+}
