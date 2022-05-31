@@ -9,6 +9,18 @@ function getTodos() {
     })
 } 
 
+async function getProducts() {
+  // v1
+  // return fetch('https://fakestoreapi.com/products')
+  //   .then(res => {
+  //     return res.json()
+  //   })
+  // v2
+  const response = await fetch('https://fakestoreapi.com/products')
+  const products = await response.json();
+  return products;
+}
+
 function createToDo(newToDo){
   return fetch(`${baseUrl}/todos`, {
     method: "POST",
